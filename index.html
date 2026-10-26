@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.8">
+    <title>Class Chat online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Sceen 1: sign up or log in -->
+<main id="auth-screen" class="chat auth">
+    <h1>Class Chat</h1>
+    <p class="subtitle">log in join the conversation.</p>
+
+    <form id="auth-form">
+    <label for="display-name"> Disply name (sign up only)</label>
+    <input id="display-name" type="text" maxlength="24"
+      placeholder="Your name or nickname">
+
+<label for="email">Email</label>
+<input id="email" type="email" required placeholder="youschool.com">
+
+<label for="password">Password (at least 8 characters)</label>
+<input id="password" typre=" password" minlength="8" required>
+
+<div class=" auth buttom">
+    <buttom type="submit" id=" login-btn">Log in</buttom>
+    <buttom type="button" id="sigup-bth" class="ghost">Sign up</buttom>
+</div>
+</form>
+<p id="auth-massage" class="auth auth-massage" role="status"></p>
+</main>
+
+<!-- Screen 2: the chat room-->
+<main id="chat-screen" class="chat" hidden>
+    <header class="chat- header">
+    <H1>Class Chat </H1>
+    <div class="controls">
+        <spam id="who">signad in</spam>
+        <button id="log out" type="buttom" class="ghost">log out</button>
+    </div>
+        </header>
+        <ul id="message" class="massage" aria-live="polite"></ul>
+
+    <form id="message" class="composer"autocomplete="off">
+        <label fo="massage-input" class="visually-hidden">message</label>
+        <input id="massage-input" type="text" maxlength="500" required
+        placeholder="Type a message or /weather manila">
+        <button type="submit">Send</button>
+    </form>
+</main>
+
+<script
+ SFC="https://cdn.jsdeliver.net/nps/@supabase/-js@2.110.1"
+ ></script>
+ <script SFC="script.js"></script>
+</body>
+ </html>                                                                                                                                                                                                                                                                                                                                                                                                        "
